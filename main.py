@@ -5,9 +5,9 @@ def result_checker(e):
     document.getElementById('output').innerHTML = ""
 
     # Define sets for each grade level
-    grade7 = {'Mike Velarde', 'Munir Arbison', 'Rodante Marcoleta'}
-    grade8 = {'Joshua Ortiz', 'Chezka Robles', 'Faisal Mangondato', 'Paolo Marcoleta'}
-    grade9 = {'Lebron James', 'Rodrigo Duterte', 'Chiz Escudero'}
+    grade7 = {'Moka Sakai', 'Anthony Edwards', 'Hawas Kobra'}
+    grade8 = {'Joshua Ortiz', 'Taranbir Singh', 'Bonnie Nubla', 'Alexa Agnote'}
+    grade9 = {'Lebron James', 'Alejandro Alanano', 'Joald Gonzales'}
     grade10 = {'Georgina Sarmiento', 'Franco Maglaqui', 'Chester Roxas', 'Joseph Co'}
 
     # User input value for first and last name
@@ -23,8 +23,9 @@ def result_checker(e):
     set_members = grade7 | grade8 | grade9 | grade10 | new_member_set
     total_members = len(grade7 | grade8 | grade9 | grade10 | new_member_set)
 
-
+    # Joins them all together with a line break
     members_list = "<br>".join(set_members)
 
+    # Display output
     document.getElementById('result').innerHTML = f'All members:<br> {members_list}'
     display(f'Total members: {total_members}', target='result') 
